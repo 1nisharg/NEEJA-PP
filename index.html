@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Duchas Technologies</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.7;
+            color: #2c3e50;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+            animation: slideIn 0.6s ease;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 50px 40px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="40" fill="rgba(255,255,255,0.1)"/></svg>');
+            opacity: 0.1;
+        }
+
+        header h1 {
+            font-size: 2.8em;
+            margin-bottom: 10px;
+            font-weight: 700;
+            position: relative;
+            z-index: 1;
+        }
+
+        header p {
+            font-size: 1.2em;
+            opacity: 0.95;
+            position: relative;
+            z-index: 1;
+        }
+
+        .last-updated {
+            background: #fff3cd;
+            color: #856404;
+            padding: 15px 40px;
+            text-align: center;
+            font-weight: 600;
+            border-bottom: 3px solid #ffc107;
+        }
+
+        .content {
+            padding: 50px 40px;
+        }
+
+        h2 {
+            color: #667eea;
+            font-size: 1.9em;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            padding-bottom: 12px;
+            border-bottom: 3px solid #667eea;
+            position: relative;
+        }
+
+        h2:first-of-type {
+            margin-top: 0;
+        }
+
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: #764ba2;
+        }
+
+        p {
+            margin-bottom: 18px;
+            text-align: justify;
+            font-size: 1.05em;
+        }
+
+        ul {
+            margin: 20px 0 25px 0;
+            padding-left: 0;
+            list-style: none;
+        }
+
+        li {
+            margin-bottom: 15px;
+            padding-left: 35px;
+            position: relative;
+            font-size: 1.05em;
+        }
+
+        li::before {
+            content: '●';
+            color: #667eea;
+            font-size: 1.3em;
+            position: absolute;
+            left: 10px;
+            top: -2px;
+        }
+
+        strong {
+            color: #764ba2;
+            font-weight: 600;
+        }
+
+        .highlight {
+            background: linear-gradient(135deg, #f0f4ff 0%, #e8ecff 100%);
+            padding: 25px;
+            border-left: 5px solid #667eea;
+            border-radius: 10px;
+            margin: 25px 0;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.1);
+        }
+
+        .highlight p {
+            margin-bottom: 0;
+            color: #2c3e50;
+        }
+
+        .contact-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 35px;
+            border-radius: 15px;
+            margin-top: 40px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+        }
+
+        .contact-box h2 {
+            color: white;
+            border: none;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        .contact-box h2::after {
+            display: none;
+        }
+
+        .contact-box p {
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+
+        .contact-box a {
+            color: white;
+            text-decoration: none;
+            font-weight: 700;
+            border-bottom: 2px solid white;
+            transition: all 0.3s ease;
+            font-size: 1.15em;
+        }
+
+        .contact-box a:hover {
+            opacity: 0.8;
+            letter-spacing: 0.5px;
+        }
+
+        .nav-link {
+            background: #f8f9fa;
+            padding: 20px 40px;
+            text-align: center;
+            border-bottom: 2px solid #e9ecef;
+        }
+
+        .nav-link a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1em;
+            padding: 12px 30px;
+            border: 2px solid #667eea;
+            border-radius: 8px;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+
+        .nav-link a:hover {
+            background: #667eea;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+        }
+
+        footer {
+            background: #f8f9fa;
+            padding: 25px 40px;
+            text-align: center;
+            border-top: 2px solid #e9ecef;
+            color: #6c757d;
+            font-size: 1em;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 20px 10px;
+            }
+
+            header {
+                padding: 35px 25px;
+            }
+
+            header h1 {
+                font-size: 2em;
+            }
+
+            header p {
+                font-size: 1em;
+            }
+
+            .content {
+                padding: 35px 25px;
+            }
+
+            .last-updated {
+                padding: 12px 25px;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+
+            .contact-box {
+                padding: 25px 20px;
+            }
+
+            footer {
+                padding: 20px 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Privacy Policy</h1>
+            <p>Duchas Technologies Pvt Ltd</p>
+        </header>
+
+        <div class="last-updated">
+            Last updated: 20th January 2026
+        </div>
+
+        <div class="nav-link">
+            <a href="terms.html">View Terms & Conditions →</a>
+        </div>
+
+        <div class="content">
+            <h2>1. Our Commitment</h2>
+            <p>At Duchas, protecting your privacy is a core commitment. This policy describes how we collect, use, process, store, and protect personal data when you use our voice-to-voice agent service (the "Service"). We believe privacy should be transparent and under your control.</p>
+
+            <h2>2. What We Collect</h2>
+            <p>We collect only what is necessary to provide and operate the Service reliably and securely. Depending on how you use the Service, this may include:</p>
+            <ul>
+                <li><strong>Account information:</strong> e.g., name, email address, phone number, profile information (if you sign up or register).</li>
+                <li><strong>Authentication tokens / credentials,</strong> if you connect external integrations (e.g., third-party calendar, email, contacts) via OAuth or similar.</li>
+                <li><strong>Usage data:</strong> metadata such as session durations, which features are used, timestamps, device or browser type, operating system, crash logs or error data, performance metrics.</li>
+                <li><strong>Voice data:</strong> Real-time voice commands / audio input that you speak to the agent — but we do not store raw audio recordings long-term by default. Instead, we may convert it to text for processing, and discard the original audio immediately after the command is executed.</li>
+                <li><strong>Preference and context data:</strong> settings, interaction history, and other information you choose to provide that helps personalize the assistant's responses (such as tone, scheduling habits, or frequently used contacts).</li>
+            </ul>
+
+            <h2>3. How We Use the Data</h2>
+            <p>We use the collected information for purposes including:</p>
+            <ul>
+                <li>Providing core functionality of the Service (understanding your voice commands, responding appropriately, integrating with connected services).</li>
+                <li>Authentication, account management, and support.</li>
+                <li>Improving and maintaining performance, stability, and reliability of the Service (e.g., diagnostics, bug fixing, usage analytics).</li>
+                <li>Communicating updates, support messages, and important notices when you consent.</li>
+                <li>To personalize responses and behaviour of the assistant based on your saved preferences and past interactions (when you enable such features).</li>
+            </ul>
+            <p>We process data based on your consent (e.g., when you permit integrations), to fulfil our contract with you (providing the Service), for legitimate business interests (service maintenance, improvement), and to comply with applicable laws.</p>
+
+            <h2>4. Data Sharing & Disclosure</h2>
+            <ul>
+                <li>We do not sell or trade your personal data.</li>
+                <li>We may share data with trusted third-party service providers (such as cloud hosting, speech-processing APIs, analytics providers) — but only under strict confidentiality and only to the extent they are needed to perform on our behalf.</li>
+                <li>We may disclose information only when required by law (e.g., in response to a lawful request), to protect the safety, rights, or property of Duchas Technologies Private Limited, or in connection with legal proceedings.</li>
+                <li>In case of a merger, acquisition or business transfer, we will notify users ahead of time and provide choices about how their data is handled.</li>
+            </ul>
+
+            <h2>5. Data Retention</h2>
+            <ul>
+                <li>We retain account-related information for as long as your account remains active.</li>
+                <li>Usage metadata (aggregated/anonymized) may be retained for a limited period (e.g., 90 days) for analytics and performance tuning.</li>
+                <li>Preference and personalization data is retained for as long as your account is active or until you delete it from within the Service, and may be automatically deleted after a period of inactivity that we will specify in the app or on our site.</li>
+                <li>Raw voice audio: deleted immediately after processing (unless you explicitly grant permission for retention — e.g., for troubleshooting).</li>
+                <li>Where we convert voice to text, the resulting text may be processed to provide the Service (for example, to draft an email) and, if you enable personalization features, certain extracted preference signals may be stored as part of your account. You can disable personalization at any time in settings.</li>
+                <li>Support or communication logs may be stored for a longer defined duration (e.g., up to 1–2 years) as necessary for service and support purposes.</li>
+                <li>Upon account deletion or user request, we permanently delete all personal data within a defined timeframe of 30 days.</li>
+            </ul>
+
+            <h2>6. Your Rights</h2>
+            <p>As a user, you have the right to:</p>
+            <ul>
+                <li>Access the personal data we hold about you.</li>
+                <li>Correct or update inaccurate or incomplete data.</li>
+                <li>Delete your account and request full removal of your personal data.</li>
+                <li>Restrict or withdraw consent to data processing (e.g., revoke integrations or permissions).</li>
+                <li>Within the Service, we may provide settings where you can directly view, update, or delete saved preferences and context used for personalization, and where you can disable personalization features altogether.</li>
+                <li>Receive a copy of your data (data portability) or understand with whom your data was shared (if applicable).</li>
+            </ul>
+            <div class="highlight">
+                <p><strong>To exercise these rights, contact us at support@duchastech.com. We aim to respond to such requests within 30 days.</strong></p>
+            </div>
+
+            <h2>7. Security</h2>
+            <p>We implement appropriate technical and organizational measures to safeguard your data, including encryption (in transit and at rest), secure authentication, access controls, regular security audits, and other best practices as per industry standards.</p>
+
+            <h2>8. Changes to This Policy</h2>
+            <p>We may update the Privacy Policy from time to time (e.g., to accommodate new features, legal/regulatory changes, or improvements). When we make material changes, we will notify users (e.g., via email or in-app notification) and display the "last updated" date at the top. Continued use of the Service after such updates constitutes acceptance of the revised policy.</p>
+
+            <div class="contact-box">
+                <h2>9. Contact Us</h2>
+                <p>If you have questions, concerns or requests related to privacy or your personal data, please contact us at:</p>
+                <p><strong>Duchas Technologies Pvt Ltd</strong></p>
+                <p>Email: <a href="mailto:support@duchastech.com">support@duchastech.com</a></p>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 Duchas Technologies Pvt Ltd. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
